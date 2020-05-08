@@ -1,4 +1,4 @@
-<figure class="{{ include.class }}">
+<figure class="{{ include.class }}" {{ include.propeties }}>
   <img src=
     {% if include.image_path contains "://" %}
       "{{ include.image_path }}"
@@ -9,4 +9,6 @@
   {% if include.caption %}
     <figcaption>
       {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
-    </figcaption>{% endif %}</figure>
+    </figcaption>
+  {% endif %}
+</figure>
