@@ -48,8 +48,12 @@
       {% if page.read_time %}
         <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
       {% endif %}
-      {% if page.header.cta_url %}
-        <p><a href="{{ cta_path }}" class="btn {% if page.header.cta_class %}{{ page.header.cta_class }}{% else %}btn--light-outline{% endif %} btn--large">{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+      {% if page.header.cta_url and page.header.cta_arrow %}
+        <h1><a href="{{ cta_path }}"><i class="fas fa-arrow-down"></i></a></h1>
+      {% else %}
+        <p><a href="{{ cta_path }}"
+            class="btn {% if page.header.cta_class %}{{ page.header.cta_class }}{% else %}btn--light-outline{% endif %} btn--large">{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>
+        </p>
       {% endif %}
       {% if page.header.actions %}
         <p>
