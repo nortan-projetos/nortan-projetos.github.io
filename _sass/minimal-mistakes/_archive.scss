@@ -387,15 +387,6 @@
       margin-bottom: 2em;
     }
 
-    a.btn::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-    }
-
     @include breakpoint($small) {
       .archive__item-teaser {
         float: left;
@@ -427,15 +418,6 @@
 
     .archive__item-teaser {
       margin-bottom: 2em;
-    }
-
-    a.btn::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
     }
 
     @include breakpoint($small) {
@@ -472,15 +454,6 @@
 
     .archive__item-teaser {
       margin-bottom: 2em;
-    }
-
-    a.btn::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
     }
 
     @include breakpoint($small) {
