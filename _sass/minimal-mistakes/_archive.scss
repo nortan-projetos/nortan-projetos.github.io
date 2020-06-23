@@ -582,6 +582,10 @@
   &--wide {
     text-align: justify;
   }
+
+  &--wide-center {
+    text-align: center !important;
+  }
 }
 
 /* Place inside an archive layout */
